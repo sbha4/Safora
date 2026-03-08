@@ -65,4 +65,6 @@ cd safora
 npm install
 # Start development server
 npm run dev
+```
+The app will be available at http://localhost:8080
 

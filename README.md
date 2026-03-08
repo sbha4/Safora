@@ -41,7 +41,7 @@ A modern, mobile-first Progressive Web App designed to empower users with real-t
 - **Region:** Mount Lavinia, Colombo, Sri Lanka
 - **Languages:** English (with Sinhala/Tamil support ready)
 - **Currency:** Sri Lankan Rupees (Rs.)
-- **Names:** Diverse female names (Buddhist, Christian, Muslim, Tamil communities)
+- **Names:** Diverse female names 
 - **Data:** 27 demo safety markers across major Colombo areas
 
 ## 🛠️ Technology Stack
@@ -193,54 +193,6 @@ The app includes 27 pre-populated safety reports across Colombo:
 
 Partner locations include cafes, convenience stores, and 24-hour safe spaces.
 
-## 🌐 Deployment
 
-### Publish with Lovable
-1. Open [Lovable Project](https://lovable.dev)
-2. Click **Share → Publish**
-3. Custom domain setup available in Project Settings
 
-### PWA Installation
-Users can install Safora as a Progressive Web App:
-- iOS: Share → Add to Home Screen
-- Android: Menu → Install App
 
-## 🔗 Custom Domain Setup
-
-To connect your own domain:
-1. Navigate to Project → Settings → Domains
-2. Click "Connect Domain"
-3. Follow DNS configuration steps
-4. [Read detailed guide](https://docs.lovable.dev/features/custom-domain)
-
-## 🚧 Future Enhancements
-
-- [ ] Sinhala & Tamil language support
-- [ ] Real Stripe payment integration
-- [ ] GPS-based real-time tracking
-- [ ] ML-powered safety predictions
-- [ ] Live volunteer response network
-- [ ] Integration with local authorities
-- [ ] Push notifications
-- [ ] Voice-based SOS
-
-## 📄 License
-
-This project is part of the Lovable PWA template ecosystem.
-
-## 👥 Contributing
-
-Contributions welcome! Please submit issues and PRs via GitHub.
-
-## 📞 Support
-
-For questions or issues:
-- Check the [Lovable Docs](https://docs.lovable.dev)
-- File an issue in the repository
-- Contact the development team
-
----
-
-**Built with ❤️ for women's safety in South Asia**
-
-Version 1.0.0 - March 2026

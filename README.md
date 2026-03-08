@@ -1,10 +1,7 @@
-Gemini said
-Here is a clean, professional, and "copy-pastable" version of your README. It’s designed to look great on GitHub with clear hierarchies and quick scannability.
-
 🛡️ Safora - AI-Powered Women's Safety App
 Live Demo: safora-womens-safety.lovable.app
 
-A modern, mobile-first Progressive Web App (PWA) designed to empower users with real-time safety features, community intelligence, and emergency response tools. Specifically localized for Sri Lanka with female-centric design and accessible safety features.
+A modern, mobilefirst Progressive Web App (PWA) designed to empower users with real-time safety features, community intelligence, and emergency response tools. Specifically localized for Sri Lanka.
 
 🌟 Key Features
 🆘 Safety Essentials (Free)

@@ -1,6 +1,6 @@
 # 🛡️ Safora - AI-Powered Women's Safety App
 
-**Live Demo:** [safora-womens-safety.lovable.app](https://safora-womens-safety.lovable.app)
+**Live Demo:** [[(https://safora-your-shield.lovable.app/login)](https://safora-your-shield.lovable.app/login)]
 
 A modern, mobile-first Progressive Web App (PWA) designed to empower users with real-time safety features, community intelligence, and emergency response tools. Specifically localized for **Sri Lanka** with a focus on accessibility and modern UX.
 

@@ -39,26 +39,11 @@ A modern, mobile-first Progressive Web App (PWA) designed to empower users with 
 - **State Management:** LocalStorage persistence for user data
 - **Audio:** Web Audio API for realistic ringtone generation
 
----
-
-## 🎯 Key App Routes
-
-| Route | Purpose |
-| :--- | :--- |
-| `/` | Home screen with safety score & quick actions |
-| `/map` | Interactive safety map & incident reporting |
-| `/sos` | Emergency SOS interface |
-| `/fake-call` | Realistic escape call UI |
-| `/admin` | City Safety Insights (B2B Dashboard) |
-| `/rewards` | Safety points & partner marketplace |
-
----
-
 ## 🚀 Quick Start
 Ensure you have [Node.js](https://nodejs.org/) installed, then run:
 ```bash
 # Clone the repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/sbha4/Safora.git
 # Navigate to project directory
 cd safora
 # Install dependencies

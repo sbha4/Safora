@@ -1,55 +1,103 @@
-# 🛡️ Safora - AI-Powered Women's Safety App
+# Safora - Multi-Role SaaS Women's Safety Platform
 
-**Live Demo:** [[(https://safora-your-shield.lovable.app/login)](https://safora-your-shield.lovable.app/login)]
-
-A modern, mobile-first Progressive Web App (PWA) designed to empower users with real-time safety features, community intelligence, and emergency response tools. Specifically localized for **Sri Lanka** with a focus on accessibility and modern UX.
-
+A mobile-first PWA combining personal safety tools, corporate employee monitoring, and platform governance in one SaaS app. Built for Sri Lankan users with English, Sinhala, and Tamil support.
 ---
 
-## 🌟 Features
+## Overview
 
-### 🆘 Core Safety Features (Always Free)
-- **SOS Emergency Alerts** - Instant emergency notification system for trusted contacts.
-- **Emergency Contacts** - Quick access and management of your inner circle.
-- **Interactive Safety Map** - Real-time safety markers, heatmaps, and community reports using Leaflet.js.
-- **Community Safety Reports** - Crowdsourced incident reporting with safety ratings and location tagging.
-- **Fake Call Feature** - Realistic incoming call UI to provide a safe exit from uncomfortable situations.
-- **Quick Escape Mode** - One-tap access to the fake call interface from any screen.
+Safora has three role-based portals in one app:
+- **User Portal** — SOS, safe routes, fake calls, rewards, Secure Transit Mode
+- **Corporate Portal** — Employee safety monitoring for HR/security teams
+- **Admin Portal** — Payments, partnerships, analytics, and platform ops
 
-### 💎 Premium Features (Safora Plus)
-- **AI-Based Route Risk Prediction** - Advanced safest-route algorithm using local safety data.
-- **Real-Time Safety Alerts** - Live notifications when entering known high-risk zones.
-- **Night Travel Mode** - Specialized UI and heightened monitoring for after-dark journeys.
-- **Extended Safety History** - Comprehensive logs of personal safety reports and routes.
+Deep purple glassmorphism design, mobile-first PWA.
 
-### 🏢 Additional Ecosystem
-- **Partner Safe Zones** - Verified cafes, pharmacies, and 24/7 safe spaces visible on the map.
-- **Rewards Marketplace** - Earn safety points by contributing reports and redeem them for partner discounts.
-- **Admin Dashboard** - City Safety Insights for B2B partners (Government, Universities, NGOs).
+## Demo Credentials
 
----
+| Role | Email | Password | Portal |
+|------|-------|----------|--------|
+| User | `user@hershield.com` | `demo123` | Mobile safety app |
+| Company Admin | `hr@securecorp.com` | `demo123` | Corporate Dashboard |
+| App Admin | `admin@hershield.com` | `demo123` | Admin Console |
 
-## 🛠️ Technology Stack
+Quick "Demo Login" buttons are on the login screen for instant access.
 
-- **Frontend Framework:** React 18 with TypeScript
-- **Build Tool:** Vite (Lightning-fast development)
-- **Styling:** Tailwind CSS + shadcn/ui (Radix UI primitives)
-- **Animations:** Framer Motion for smooth micro-interactions
-- **Mapping:** Leaflet.js + Leaflet.heat for geospatial visualization
-- **State Management:** LocalStorage persistence for user data
-- **Audio:** Web Audio API for realistic ringtone generation
+## User Roles
 
-## 🚀 Quick Start
-Ensure you have [Node.js](https://nodejs.org/) installed, then run:
+- **User** — SOS, map, fake call, reports, rewards, profile, Secure Transit Mode, SaforaPlus upgrade
+- **Company Admin** — Real-time trip monitoring, incident feed, employee roster, corporate plan billing
+- **App Admin** — Platform ops, payment approvals, partnership/ad/merch approvals, analytics
+
+## Key Features
+
+**Core (Always Free):** SOS emergency alerts with GPS sharing · interactive Leaflet safety map with heatmap and 27 demo reports across Colombo/Mt. Lavinia/Dehiwala/Pettah · fake call with Quick Escape button · emergency contacts · community safety reports with points · rewards marketplace · gamification (4 levels + leaderboard)
+
+**SaforaPlus (Premium):** AI safest-route, night travel protection, priority alerts, extended trip history, corporate travel support — $3.99/mo or $29/yr
+
+**Corporate:** Live audit map, incident feed, trip analytics, employee management, intervention actions — plans from Startup (25 employees) to Enterprise (unlimited)
+
+**Admin:** Platform stats, payment/partnership/merch approval workflows
+
+**Secure Transit Mode (New):** Start an audited trip, get a 150m safe-corridor around your route with a pulsing "Silent Heartbeat" indicator; 100m+ deviation triggers vibration, amber UI warning, and flags the trip on the corporate dashboard.
+
+## Technical Architecture
+
+**Frontend:** React 18, Vite 5, TypeScript 5, Tailwind CSS v3, Framer Motion, React Router 6, Leaflet.js + Leaflet.heat, shadcn/ui, Sonner, Lucide React, TanStack Query
+
+**Backend:** Lovable Cloud/Supabase, PostgreSQL with Row-Level Security, Supabase Auth, separate `user_roles` table
+
+**State:** AuthContext (auth/role), LanguageContext (i18n), localStorage (profile, contacts, reports, SOS events, session)
+
+## Getting Started
+
 ```bash
-# Clone the repository
-git clone https://github.com/sbha4/Safora.git
-# Navigate to project directory
+git clone <YOUR_GIT_URL>
 cd safora
-# Install dependencies
 npm install
-# Start development server
-npm run dev
+npm run dev        # http://localhost:8080
+npm run build && npm run preview
+npm run test
 ```
-The app will be available at http://localhost:8080
 
+## Routes
+
+| Route | Role | Purpose |
+|-------|------|---------|
+| `/login` | Public | Role-based login |
+| `/` | User | Home / safety score |
+| `/sos`, `/map`, `/report`, `/contacts`, `/fake-call` | User | Core safety tools |
+| `/rewards`, `/leaderboard`, `/profile` | User | Engagement & profile |
+| `/subscription` | User | SaforaPlus upgrade |
+| `/secure-transit` | User | Audited trips |
+| `/corporate`, `/company-plans` | Company Admin | Monitoring & billing |
+| `/admin` | App Admin | Platform console |
+
+## Design System
+
+- **Colors:** Deep purple (primary), safety red (accent), green/amber/red (safe/moderate/unsafe), blue (partner)
+- **UI:** Glassmorphism cards, rounded corners, large touch targets, Framer Motion transitions, app-like feel
+
+## Monetization
+
+1. SaforaPlus subscriptions — $3.99/mo or $29/yr
+2. Corporate plans — Startup $49, Business $149, Enterprise $399/mo
+3. Partner sponsorships (safe zones, ads, rewards)
+4. Safety Shop commissions
+
+Core safety features (SOS, map, reports, fake call, contacts) are always free.
+
+## Security & Privacy
+
+Demo uses **client-side mock authentication** — not production-ready. For production: enforce server-side role checks via Supabase `user_roles`, apply RLS policies on all tables, never trust client-side role checks alone. Location data is used only for safety features; minimal data collection.
+
+## Localization
+
+English (default), Sinhala (සිංහල), Tamil (தமிழ்) — 100+ translation keys, instant switching, preference saved locally.
+
+## Future Enhancements
+
+Real-time WebSocket incident feed · live map in Secure Transit · push notifications · real Stripe integration · ML route risk prediction · voice-activated SOS · emergency services integration · multi-tenant isolation · admin audit logs
+
+---
+
+**Primary Region:** Sri Lanka | **Languages:** English, Sinhala, Tamil
